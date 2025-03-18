@@ -3,64 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张苑的个人主页</title>
+    <title>张苑 - 学术主页</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-        <h1>张苑</h1>
-        <p>硕士研究生 | 资源利用与植物保护</p>
-    </header>
-
-    <section class="section">
-        <h2>个人简介</h2>
-        <p>张苑，硕士研究生，毕业于山西师范大学，现就读于华中农业大学，专业资源利用与植物保护，研究方向地力提升。</p>
-    </section>
-
-    <section class="section">
-        <h2>教育经历</h2>
+    <nav id="main-nav">
         <ul>
-            <li>华中农业大学 硕士研究生 资源利用与植物保护（在读）</li>
-            <li>山西师范大学 本科</li>
+            <li><a href="#about" class="active">个人简介</a></li>
+            <li><a href="#education">教育背景</a></li>
+            <li><a href="#honors">曾获荣誉</a></li>
+            <li><a href="#contact">联系方式</a></li>
         </ul>
+    </nav>
+
+    <section id="about" class="content-section">
+        <h1>张苑</h1>
+        <div class="academic-info">
+            <p>华中农业大学 资源利用与植物保护专业 硕士研究生（在读）</p>
+            <p>山西师范大学 环境生态工程专业 工学学士</p>
+            <p class="research-area">研究方向：土壤地力提升与可持续农业</p>
+        </div>
     </section>
 
-    <section class="section">
+    <section id="education" class="content-section">
+        <h2>教育背景</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>华中农业大学（2024-至今）</h3>
+                <p>资源利用与植物保护 硕士研究生</p>
+            </div>
+            <div class="timeline-item">
+                <h3>山西师范大学（2020-2024）</h3>
+                <p>环境生态工程 工学学士</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="honors" class="content-section">
         <h2>曾获荣誉</h2>
-        <ul>
+        <ul class="awards-list">
             <li>国家励志奖学金</li>
-            <li>学校一等奖学金</li>
-            <li>优秀学生</li>
+            <li>校级一等奖学金</li>
+            <li>优秀学生称号</li>
             <li>优秀共青团员</li>
             <li>第八届全国大学生生命科学竞赛三等奖</li>
         </ul>
     </section>
 
-    <section class="section contact-section">
+    <section id="contact" class="content-section">
         <h2>联系方式</h2>
-        <div class="contact-items">
+        <div class="contact-info">
             <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <div>
-                    <h3>电子邮箱</h3>
-                    <a href="mailto:18313858353@163.com">18313858353@163.com</a>
-                </div>
+                <img src="email-icon.svg" alt="邮箱">
+                <a href="mailto:18313858353@163.com">18313858353@163.com</a>
             </div>
             <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <div>
-                    <h3>联系电话</h3>
-                    <a href="tel:+8618313858353">+86 183-1385-8353</a>
-                </div>
+                <img src="phone-icon.svg" alt="电话">
+                <a href="tel:18313858353">183-1385-8353</a>
             </div>
         </div>
     </section>
 
-        <footer class="footer">
-            <p>&copy; 2025 张苑</p>
-        </footer>
-    </div>
+    <script src="app.js"></script>
 </body>
 </html>
