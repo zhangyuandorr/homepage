@@ -1,69 +1,186 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张苑 - 学术主页</title>
-    <link rel="stylesheet" href="style.css">
+    <title>张苑的个人网站</title>
+    <style>
+        /* 基本样式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* 背景色调整为柔和的米白色 */
+            color: #343a40;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        header {
+            background: #87CEEB; /* 标题背景色调整为浅蓝色 */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: #79ADD8 3px solid; /* 浅蓝色边框 */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav {
+            background: #79ADD8; /* 导航栏背景色调整为深一点的蓝色 */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #87CEEB; /* 内容标题颜色与标题背景色一致 */
+            border-bottom: 2px solid #87CEEB; /* 内容标题下划线颜色 */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content p, .content ul {
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        footer {
+            background: #343a40;
+            color: #f8f9fa;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* 增加一些间距和对齐样式 */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 增加一些图标样式（可选） */
+        .icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .icon-email {
+            background: url('email-icon.png') no-repeat center center;
+            background-size: contain;
+        }
+
+        .icon-phone {
+            background: url('phone-icon.png') no-repeat center center;
+            background-size: contain;
+        }
+    </style>
 </head>
 <body>
-    <nav id="main-nav">
-        <ul>
-            <li><a href="#about" class="active">个人简介</a></li>
-            <li><a href="#education">教育背景</a></li>
-            <li><a href="#honors">曾获荣誉</a></li>
-            <li><a href="#contact">联系方式</a></li>
-        </ul>
+    <header>
+        <div class="container">
+            <h1>张苑的个人网站</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">个人简介</a></li>
+                <li><a href="#education">教育经历</a></li>
+                <li><a href="#honors">曾获荣誉</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section id="about" class="content-section">
-        <h1>张苑</h1>
-        <div class="academic-info">
-            <p>华中农业大学 资源利用与植物保护专业 硕士研究生（在读）</p>
-            <p>山西师范大学 环境生态工程专业 工学学士</p>
-            <p class="research-area">研究方向：土壤地力提升与可持续农业</p>
+    <div class="container">
+        <div id="about" class="content section">
+            <h2>个人简介</h2>
+            <p>张苑，硕士研究生，毕业于山西师范大学环境生态工程专业，工学学士，现就读于华中农业大学，专业为资源利用与植物保护，研究方向为地力提升。</p>
+            <p>我对环境科学和生态工程有着浓厚的兴趣，尤其关注土壤健康和可持续农业实践。在本科期间，我参与了多个与环境修复和生态监测相关的项目，积累了丰富的实践经验。我的毕业设计项目专注于利用微生物技术改善土壤肥力，该项目不仅提升了我的科研能力，还激发了我对这一领域的深入探索。</p>
+            <p>目前，我在华中农业大学攻读硕士学位，专注于研究如何通过科学的资源管理和技术创新来提升土壤肥力和作物产量。我的研究不仅涉及实验室分析，还包括田间试验和数据分析，旨在为可持续农业发展提供科学依据和技术支持。</p>
+            <p>在未来的职业生涯中，我希望能够将所学知识应用于实际的农业生产和生态保护工作中，推动绿色农业的发展。</p>
         </div>
-    </section>
-
-    <section id="education" class="content-section">
-        <h2>教育背景</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>华中农业大学（2024-至今）</h3>
-                <p>资源利用与植物保护 硕士研究生</p>
-            </div>
-            <div class="timeline-item">
-                <h3>山西师范大学（2020-2024）</h3>
-                <p>环境生态工程 工学学士</p>
-            </div>
+        <div id="education" class="content section">
+            <h2>教育经历</h2>
+            <ul>
+                <li>本科：山西师范大学环境生态工程专业，工学学士</li>
+                <li>硕士：华中农业大学，专业资源利用与植物保护</li>
+            </ul>
         </div>
-    </section>
-
-    <section id="honors" class="content-section">
-        <h2>曾获荣誉</h2>
-        <ul class="awards-list">
-            <li>国家励志奖学金</li>
-            <li>校级一等奖学金</li>
-            <li>优秀学生称号</li>
-            <li>优秀共青团员</li>
-            <li>第八届全国大学生生命科学竞赛三等奖</li>
-        </ul>
-    </section>
-
-    <section id="contact" class="content-section">
-        <h2>联系方式</h2>
-        <div class="contact-info">
-            <div class="contact-item">
-                <img src="email-icon.svg" alt="邮箱">
-                <a href="mailto:18313858353@163.com">18313858353@163.com</a>
-            </div>
-            <div class="contact-item">
-                <img src="phone-icon.svg" alt="电话">
-                <a href="tel:18313858353">183-1385-8353</a>
-            </div>
+        <div id="honors" class="content section">
+            <h2>曾获荣誉</h2>
+            <ul>
+                <li>国家励志奖学金</li>
+                <li>学校一等奖学金</li>
+                <li>优秀学生</li>
+                <li>优秀共青团员</li>
+                <li>第八届全国大学生生命科学竞赛三等奖</li>
+            </ul>
         </div>
-    </section>
+        <div id="contact" class="content section">
+            <h2>联系方式</h2>
+            <p><span class="icon icon-email"></span> 邮箱：18313858353@163.com</p>
+            <p><span class="icon icon-phone"></span> 电话：18313858353</p>
+        </div>
+    </div>
 
-    <script src="app.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 张苑的个人网站</p>
+        </div>
+    </footer>
 </body>
 </html>
